@@ -1,6 +1,8 @@
 {
   "name": "electron-react-tool",
   "version": "0.1.0",
+  "author": "THAIVANPHU",
+  "description": "React-TypeScript-Electron with CRA and Electron Builder",
   "homepage": ".",
   "main": "build/electron/main.js",
   "private": true,
@@ -27,6 +29,15 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "build": {
+    "extends": null,
+    "files": [
+      "build/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
   },
   "eslintConfig": {
     "extends": [
